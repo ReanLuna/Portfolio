@@ -5,23 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="/MyPortfolio/static/css/style.css" />
-    <link rel="stylesheet" href="/MyPortfolio/static/css/mediaqueries.css" />
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="/static/css/mediaqueries.css" />
+    <link rel="stylesheet" href="/static/css/aos.css">
+    <link rel="stylesheet" href="/static/css/hover-min.css">
+    <link rel="stylesheet" href="/static/css/hover.css">
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">John Doe</div>
+    <nav id="desktop-nav" >
+      <div class="logo">Rean Ariban Portfolio</div>
       <div>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about" class="hvr-shrink">About</a></li>
+          <li><a href="#experience" class="hvr-shrink">Experience</a></li>
+          <li><a href="#projects" class="hvr-shrink">Projects</a></li>
+          <li><a href="" data-bs-toggle="modal" data-bs-target="#contact" class="hvr-shrink"> Contact</a></li>
+          <li><a href="#" class="hvr-shrink" data-bs-toggle="modal" data-bs-target="#login" class="hvr-shrink">Login</a></li>
         </ul>
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Rean Ariban Portfolio</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -32,38 +37,38 @@
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="#"data-bs-toggle="modal" data-bs-target="#contact"">Contact</a></li>
         </div>
       </div>
     </nav>
     <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+      <div class="section__pic-container" data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000">
+        <img src="/static/assets/person.png" alt="profile picture" class="hvr-grow" />
       </div>
-      <div class="section__text">
+      <div class="section__text" data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">John Doe</h1>
-        <p class="section__text__p2">Frontend Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+        <h1 class="title">Rean Ariban</h1>
+        <p class="section__text__p2">Graphic Designer</p>
+        <div class="btn-container ">
+          <a href="/static/assets/Rean-Aribans-Resume.pdf" download="downloaded_file_name"> 
+            <button
+            class="btn btn-color-2 hvr-grow" 
           >
             Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          </button>  </a>
+          <button class="btn btn-color-1 hvr-grow" data-bs-toggle="modal" data-bs-target="#contact">
             Contact Info
           </button>
         </div>
         <div id="socials-container">
           <img
-            src="./assets/linkedin.png"
+            src="/static/assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
             onclick="location.href='https://linkedin.com/'"
           />
           <img
-            src="./assets/github.png"
+            src="/static/assets/github.png"
             alt="My Github profile"
             class="icon"
             onclick="location.href='https://github.com/'"
@@ -71,68 +76,63 @@
         </div>
       </div>
     </section>
-    <section id="about">
+    <section id="about" data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
         <div class="section__pic-container">
           <img
-            src="./assets/about-pic.png"
+            src="/static/assets/Profile pic.png"
             alt="Profile picture"
             class="about-pic"
           />
         </div>
         <div class="about-details-container">
           <div class="about-containers">
-            <div class="details-container">
+            <div class="details-container hvr-float">
               <img
-                src="./assets/experience.png"
+                src="/static/assets/experience.png"
                 alt="Experience icon"
                 class="icon"
               />
               <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
+              <p>2+ years <br />Graphic Designer</p>
             </div>
-            <div class="details-container">
+            <div class="details-container hvr-float">
               <img
-                src="./assets/education.png"
+                src="/static/assets/education.png"
                 alt="Education icon"
                 class="icon"
               />
               <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+              <p>Bachelor of science in information technology <br> student</p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
+              Hello! I'm Renievan F. Ariban, a graduating student from Western Mindanao State University with a Bachelor of Science in Information Technology. With a strong foundation in graphic design and proficiency in Adobe Photoshop and Illustrator, I'm passionate about crafting compelling visuals that resonate with audiences. Through internships and freelance projects, I've honed my skills and am now eager to apply my expertise to make impactful contributions in the creative industry. Let's connect and create something amazing together!
             </p>
           </div>
         </div>
       </div>
       <img
-        src="./assets/arrow.png"
+        src="/static/assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#experience'"
       />
     </section>
-    <section id="experience">
+    <section id="experience" data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="details-container hvr-float">
+            <h2 class="experience-sub-title ">Frontend Development</h2>
             <div class="article-container">
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="/static/assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -143,7 +143,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="/static/assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -152,231 +152,450 @@
                   <p>Experienced</p>
                 </div>
               </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
             </div>
           </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="details-container hvr-float">
+            <h2 class="experience-sub-title">Graphic Designer</h2>
             <div class="article-container">
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="/static/assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
                 <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
+                  <h3>Adobe Photoshop</h3>
+                  <p>Experienced</p>
                 </div>
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="/static/assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
                 <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
+                  <h3>Adobe Illustrator</h3>
+                  <p>Experienced</p>
                 </div>
               </article>
             </div>
           </div>
         </div>
       </div>
+      <br>
       <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
+      src="/static/assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#projects'"
+    />
     </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+
+    <section id="projects" data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000">
+      <div class="container prj-cont ">
+        <h1 class="mt-5 mb-4">My Projects</h1>
+        <div class="row">
+          <!-- Project 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card card-prj-design hvr-shrink">
+              <img src="/static/assets/Project1.png" class="card-img-top" alt="Project 1">
+              <div class="card-body">
+                <h5 class="card-title">Typography Design</h5>
+                <p class="card-text">A Typography design that shares how palestine people suffer in the war.</p>
+                <a class="btn btn-primary btn-full" data-bs-toggle="modal" data-bs-target="#viewproject1">View Project</a>
+              </div>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+          <!-- Project 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card card-prj-design hvr-shrink">
+              <img src="/static/assets/Project1.png" class="card-img-top" alt="Project 2">
+              <div class="card-body">
+                <h5 class="card-title">Typography Design</h5>
+                <p class="card-text">A Typography design that shares how palestine people suffer in the war.</p>
+                <a class="btn btn-primary btn-full" data-bs-toggle="modal" data-bs-target="#viewproject2">View Project</a>
+              </div>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
+          <!-- Project 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card card-prj-design hvr-shrink">
+              <img src="/static/assets/Project1.png" class="card-img-top" alt="Project 3">
+              <div class="card-body">
+                <h5 class="card-title">Typography Design</h5>
+                <p class="card-text">A Typography design that shares how palestine people suffer in the war.</p>
+                <a class="btn btn-primary btn-full" data-bs-toggle="modal" data-bs-target="#viewproject3">View Project</a>
+              </div>
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+          </div>
+
+          
+          <!-- Add more projects as needed -->
+          
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="viewproject1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" >
+    <div class="modal-content modal-design">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 " id="exampleModalLabel">Typography Designs</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+
+      <div class="container text-center">
+        <div class="row row-cols-3">
+
+
+
+      <div class="modal-body">
+        <div class="mb-4">
+          <div class="card card-design hvr-float">
+            <img src="/static/assets/Project1.png" class="card-img-top " alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Graphic Design</h5>
             </div>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+
+      <div class="modal-body">
+        <div class="mb-4">
+          <div class="card card-design hvr-float">            
+            <img src="/static/assets/Project1.png" class="card-img-top " alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Graphic Design</h5>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+
+      <div class="modal-body">
+        <div class="mb-4">
+          <div class="card card-design hvr-float">
+            <img src="/static/assets/Project1.png" class="card-img-top " alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Graphic Design</h5>
+            </div>
+          </div>
         </div>
-      </nav>
-      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
-    </footer>
-    <script src="/MyPortfolio/static/js/script.js"></script>
+      </div>
+      <div class="modal-body">
+        <div class="mb-4">
+          <div class="card card-design hvr-float">
+            <img src="/static/assets/Project1.png" class="card-img-top " alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Graphic Design</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="mb-4">
+          <div class="card card-design hvr-float">
+            <img src="/static/assets/Project1.png" class="card-img-top " alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Graphic Design</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="mb-4">
+          <div class="card card-design hvr-float">
+            <img src="/static/assets/Project1.png" class="card-img-top " alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Graphic Design</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="viewproject2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" >
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Graphic Designs</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+
+      <div class="container text-center">
+        <div class="row row-cols-3">
+
+
+
+      <div class="modal-body">
+        <div class="mb-4">
+          <div class="card">
+            <img src="/static/assets/Project1.png" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Graphic Design</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="mb-4">
+          <div class="card">
+            <img src="/static/assets/Project1.png" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Graphic Design</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="mb-4">
+          <div class="card">
+            <img src="/static/assets/Project1.png" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Graphic Design</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="mb-4">
+          <div class="card">
+            <img src="/static/assets/Project1.png" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Graphic Design</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="mb-4">
+          <div class="card">
+            <img src="/static/assets/Project1.png" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Graphic Design</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="mb-4">
+          <div class="card">
+            <img src="/static/assets/Project1.png" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Graphic Design</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="viewproject3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" >
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Pubmat Designs</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+
+      <div class="container text-center">
+        <div class="row row-cols-3">
+
+
+
+      <div class="modal-body">
+        <div class="mb-4">
+          <div class="card">
+            <img src="/static/assets/Project1.png" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Graphic Design</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="mb-4">
+          <div class="card">
+            <img src="/static/assets/Project1.png" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Graphic Design</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="mb-4">
+          <div class="card">
+            <img src="/static/assets/Project1.png" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Graphic Design</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="mb-4">
+          <div class="card">
+            <img src="/static/assets/Project1.png" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Graphic Design</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="mb-4">
+          <div class="card">
+            <img src="/static/assets/Project1.png" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Graphic Design</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="mb-4">
+          <div class="card">
+            <img src="/static/assets/Project1.png" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Graphic Design</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal  Contact-->
+<div class="modal fade " id="contact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content modal-xl contact-body">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Name:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Message:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+
+
+
+      </div>
+      <div class="modal-footer contact-footer">
+        <button type="button" class="btn btn-primary">Send</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade " id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content modal-xl contact-body">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+
+        <div class="container-login">
+          <div class="row justify-content-center">
+            <div class="col-md-6 login-container">
+              <img src="/static/assets/person.png" alt="#" class="imglogin">
+              <form method="post" action="{% url 'PORTFOLIO:login' %}">
+                {% csrf_token %}
+                <div class="form-group">
+                  <label for="username">Username</label>
+                  <input type="text" class="form-control" id="username" placeholder="Enter username">
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" id="password" placeholder="Enter password">
+                </div>
+                <br>
+                <input type="hidden" name="next" value="{% url 'PORTFOLIO:user' %}">
+                <div class="buttonlogin">
+                <button type="submit" class="btn btn-primary btn-block btn-login">Login</button>
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+   <footer class="bg-light text-center text-lg-start mt-auto">
+    <div class="container p-4 cnt-footer">
+      <p>&copy; 2024 My Projects. All rights reserved.</p>
+    </div>
+  </footer>
+  
+    <script src="/static/js/script.js"></script>
+    <script src="/static/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

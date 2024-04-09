@@ -9,7 +9,13 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-image: url(/static/assets/bg.gif);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
 }
+
 
 html {
   scroll-behavior: smooth;
@@ -36,7 +42,13 @@ nav,
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height:13vh;
+  padding: 20px;
+  background-image: url(/static/assets/bg.gif);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
 }
 
 .nav-links {
@@ -52,10 +64,13 @@ a {
 }
 
 a:hover {
-  color: grey;
+  color: rgb(36, 0, 238);
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-decoration-color: rgb(36, 0, 238);
+}
+.btn-full{
+  width: 100% !important;
 }
 
 .logo {
@@ -167,6 +182,7 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+
 }
 
 .section__pic-container {
@@ -241,12 +257,12 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-  background: rgb(53, 53, 53);
-  color: white;
+  background: rgb(36, 0, 238);
+  color: white !important;
 }
 
 .btn-color-1:hover {
-  background: rgb(0, 0, 0);
+  background: rgb(36, 0, 238);
 }
 
 .btn-color-2 {
@@ -296,9 +312,9 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: white;
+  background-image: url(/static/assets/bg.gif);
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: rgb(0, 0, 0) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
 }
@@ -353,80 +369,113 @@ article .icon {
   cursor: default;
 }
 
-/* PROJECTS SECTION */
-
-#projects {
-  position: relative;
-}
-
-.color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
-}
-
-.project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
-}
-
-.project-title {
-  margin: 1rem;
-  color: black;
-}
-
-.project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
-}
-
-/* CONTACT */
-
-#contact {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 70vh;
-}
-
-.contact-info-upper-container {
-  display: flex;
-  justify-content: center;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
-  margin: 2rem auto;
-  padding: 0.5rem;
-}
-
-.contact-info-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 1rem;
-}
-
-.contact-info-container p {
-  font-size: larger;
-}
-
-.contact-icon {
-  cursor: default;
-}
-
-.email-icon {
-  height: 2.5rem;
-}
-
-/* FOOTER SECTION */
-
 footer {
-  height: 26vh;
-  margin: 0 1rem;
+  background-image: url(/static/assets/bg.gif);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  padding: 20px 0;
+  text-align: center;
+  position: static;
+  bottom: 0;
+  width: 100%;
 }
 
-footer p {
+.modal-design{
+  background-image: url(/static/assets/bg.gif);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+
+.card-design{
+
+  border-color: rgb(133, 133, 133);
+  background-color: rgb(217, 243, 248);
+  padding: 3px;
+}
+
+.card-prj-design{
+  background: transparent;
+  border-radius: 10px;
+}
+
+#projects{
+
+  position: relative;
+  margin-bottom: 50px;
+}
+
+#contact{
+
+  position: absolute;
+}
+.contact-body{
+  background-image: url(/static/assets/bg.gif);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+
+.contact-footer{
+  justify-content: center;
+}
+
+.ctn-footer{
   text-align: center;
+}
+
+#login{
+  padding: 20px;
+  margin: 50px;
+}
+
+.container-login{
+  margin: 20px;
+}
+
+.imglogin{
+  height: 200px;
+  width: 200px;
+}
+
+.buttonlogin{
+  padding-left: 30px;
+
+}
+
+/* ADMIN */
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: sticky;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #4bffe78a; /* dark color for sidebar */
+  padding-top: 20px;
+  justify-content: center;
+
+}
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff; /* white color for links */
+  display: block;
+  text-align: center;
+  margin: 40px;
+  color: black;
+}
+
+
+.sidebar img{
+  height: 180px;
+  width: 200px;
+  padding-left: 20px;
+  justify-content: center;
 }
